@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "deploying": "eb use udagram-api-dev && eb deploy ",
+    "deploy": "eb use udagram-api-dev && eb deploy ",
     "tsc": "tsc",
     "dev": "nodemon ./src/server.ts",
     "prod": "tsc && node ./www/server.js",

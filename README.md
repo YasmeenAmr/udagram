@@ -36,4 +36,5 @@ JWT_SECRET="secret-should-stay-secret"
       http://buc-udagram.s3-website-us-east-1.amazonaws.com
 
 - Back-end like :
+      udagram-api-dev22222222.us-east-1.elasticbeanstalk.com 
 
