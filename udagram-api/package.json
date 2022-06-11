@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "deploying": "eb use udagram-api-dev && eb deploy ",
+    "deploying": "eb use udagram-api-dev && eb deploy && setenv POSTGRES_HOST=$POSTGRES_HOST POSTGRES_USERNAME=$POSTGRES_USERNAME POSTGRES_PASSWORD=$POSTGRES_PASSWORD POSTGRES_DB=$POSTGRES_DB JWT_SECRET=$JWT_SECRET",
     "tsc": "tsc",
     "dev": "nodemon ./src/server.ts",
     "prod": "tsc && node ./www/server.js",
