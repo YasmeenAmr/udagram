@@ -5,7 +5,9 @@
         "backend:install": "cd udagram-api && npm install",
         "frontend:build": "cd udagram-frontend && npm run build",
         "backend:build": "cd  udagram-api && npm run build",
-        "frontend:deploy": "cd udagram-frontend && npm run deploy"
+        "frontend:deploy": "cd udagram-frontend && npm run deploy",
+        "deploying": "eb use udagram-api-dev && eb deploy && setenv POSTGRES_HOST=$POSTGRES_HOST POSTGRES_USERNAME=$POSTGRES_USERNAME POSTGRES_PASSWORD=$POSTGRES_PASSWORD POSTGRES_DB=$POSTGRES_DB JWT_SECRET=$JWT_SECRET"
+
     },
     "devDependencies": {}
 }
