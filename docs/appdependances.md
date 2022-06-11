@@ -1,0 +1,7 @@
+- Node (v14.15.1)
+- npm (6.14.8)
+- AWS CLI (v2, v1)
+- A RDS ( creating database running Postgres)
+- A S3 bucket (storing application files and hosting server)
+- A IAM (creating user)
+- A EB(running server for api)

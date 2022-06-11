@@ -3,14 +3,18 @@
   "version": "2.0.0",
   "description": "",
   "main": "src/server.js",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
   "scripts": {
-    "start": " tsc && node www/server.js",
+    "start": "node server.js",
+    "deploying": "eb use udagram-api-dev && eb deploy ",
     "tsc": "tsc",
     "dev": "nodemon ./src/server.ts",
     "prod": "tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
     "build": "tsc && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
-    "buildf": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -47,7 +51,7 @@
     "eslint": "^6.8.0",
     "eslint-config-google": "^0.14.0",
     "mocha": "^6.1.4",
-    "ts-node-dev": "^1.1.8",
-    "typescript": "^3.3.4000"
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.3"
   }
 }
