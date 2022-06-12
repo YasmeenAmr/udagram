@@ -15,9 +15,9 @@ set of actions that circleci will use to run pipeline
       2- install dependances for udagram-api
       3- build udagram-frontend
       4- build udagram-api
-      5- run udagram-frontend
-      6- run udagram-api
-      7- deploy the all application 
+      5- deploy udagram-frontend
+      6- deploy udagram-api
+      
 
 
 
