@@ -32,9 +32,8 @@ JWT_SECRET="secret-should-stay-secret"
 1- .env file added into .gitignore file
 
 ## Links
-- Front-end like :
+- Front-end link :
       http://buc-udagram.s3-website-us-east-1.amazonaws.com
 
-- Back-end like :
-      udagram-api-dev22222222.us-east-1.elasticbeanstalk.com 
-
+- Back-end link :
+      http://udagram-api-dev222.us-east-1.elasticbeanstalk.com/

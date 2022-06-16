@@ -11,12 +11,24 @@ that will use by circleci.
 ### jobs:
 set of actions that circleci will use to run pipeline
   setps:
-      1- install dependances for udagram-frontend
-      2- install dependances for udagram-api
-      3- build udagram-frontend
-      4- build udagram-api
-      5- deploy udagram-frontend
-      6- deploy udagram-api
+      1- Sign up environment
+      2- Preparing environment variables
+      3- Install NodeJS 16.13
+      4- Install NPM
+      5- Checkout code
+      6- Install AWS CLI v2
+      7- Disable AWS pager if not already configured
+      8- Configure AWS access key id
+      9- Configure AWS secret access key 
+      10- Configure AWS default region
+      11- Setting up elastic beanstalk
+      12- Front-end install
+      13- Back-end install
+      14- Front-end build
+      15- Back-end build
+      16- Back-end deploy
+      17- Front-end deploy 
+
       
 
 
